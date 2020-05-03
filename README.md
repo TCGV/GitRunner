@@ -34,7 +34,7 @@ docker exec -it <CONTAINER_ID> sh
 # screen -r
 ```
 
-[Imgur](https://imgur.com/MvEk5Vk)
+!(image)[https://imgur.com/MvEk5Vk]
 
 In order to leave the scondary screen back to the container primary shell, type `CTRL + A + D`.
 
