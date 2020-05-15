@@ -17,7 +17,7 @@ cd /images/alpine-git-npm
 docker build . -t alpine-git-npm
 ```
 
-Finally execute your **command** pointing to the tareget GitHub **repository**:
+Finally execute your **command** pointing to the target GitHub **repository**:
 
 ```sh
 docker run -d \
@@ -34,9 +34,9 @@ docker exec -it <CONTAINER_ID> sh
 # screen -r
 ```
 
-[Imgur](https://imgur.com/MvEk5Vk)
+![image](https://i.imgur.com/MvEk5Vk.png)
 
-In order to leave the scondary screen back to the container primary shell, type `CTRL + A + D`.
+In order to leave the secondary screen back to the container primary shell, type `CTRL + A + D`.
 
 ## Licensing
 
