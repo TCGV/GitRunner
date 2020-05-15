@@ -6,15 +6,15 @@ Docker images for building and running front-end projects from GitHub
 First, build the base Alpine Linux image:
 
 ```sh
-cd /images/apline-git
-docker build . -t alpine-git
+cd /images/apline-git-node
+docker build . -t apline-git-node
 ```
 
 Then, build the target platform image, for instance:
 
 ```sh
-cd /images/alpine-git-node-yarn
-docker build . -t alpine-git-node-yarn
+cd /images/alpine-git-npm
+docker build . -t alpine-git-npm
 ```
 
 Finally execute your **command** pointing to the tareget GitHub **repository**:
@@ -24,7 +24,7 @@ docker run -d \
  -e GIT_REPO_URL="https://github.com/gothinkster/react-redux-realworld-example-app" \
  -e COMMAND="npm install && npm start" \
  -p 4100:4100 \
- --name sandbox alpine-git-node-yarn
+ --name sandbox alpine-git-npm
 ```
 
 And attach to the command screen within the container to see the terminal output:

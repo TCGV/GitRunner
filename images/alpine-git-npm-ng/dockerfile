@@ -1,0 +1,7 @@
+FROM alpine-git-npm
+
+RUN npm install -g @angular/cli@latest \
+	&& npm install -g @angular-devkit/build-angular
+
+RUN ["chmod", "+x", "/usr/local/bin/docker-entrypoint.sh"]
+ENTRYPOINT ["sh", "/usr/local/bin/docker-entrypoint.sh"]

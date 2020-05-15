@@ -1,0 +1,6 @@
+FROM alpine-git-node
+
+RUN npm --version
+
+RUN ["chmod", "+x", "/usr/local/bin/docker-entrypoint.sh"]
+ENTRYPOINT ["sh", "/usr/local/bin/docker-entrypoint.sh"]
