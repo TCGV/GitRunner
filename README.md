@@ -6,8 +6,8 @@ Docker images for building and running front-end projects from GitHub
 First, build the base Alpine Linux image:
 
 ```sh
-cd /images/apline-git-node
-docker build . -t apline-git-node
+cd /images/alpine-git-node
+docker build . -t alpine-git-node
 ```
 
 Then, build the target platform image, for instance:
